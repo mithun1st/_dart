@@ -43,13 +43,13 @@ void main(){
 
   dynamic dy1;
   dy1=94;
-  print(dy1);
+  print('$dy1 > '+dy1.runtimeType.toString());
   dy1=5.5;
-  print(dy1);
+  print('$dy1 > '+dy1.runtimeType.toString());
   dy1='Mithun';
-  print(dy1);
+  print('$dy1 > '+dy1.runtimeType.toString());
   dy1=true;
-  print(dy1);
+  print('$dy1 > '+dy1.runtimeType.toString());
   dy1=null;
-  print(dy1);
+  print('$dy1 > '+dy1.runtimeType.toString());
 }
