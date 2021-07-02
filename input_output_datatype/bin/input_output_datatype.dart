@@ -10,7 +10,6 @@ block comment
 /// document
 
 void main(){
-
   //input-output
   stdout.writeln('Enter Your Name: ');
   var name = stdin.readLineSync();
@@ -42,6 +41,7 @@ void main(){
   print('$con1 $con2');
 
   dynamic dy1;
+
   dy1=94;
   print('$dy1 > '+dy1.runtimeType.toString());
   dy1=5.5;

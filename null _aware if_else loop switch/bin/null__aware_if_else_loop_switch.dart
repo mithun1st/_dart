@@ -21,12 +21,15 @@ void main(){
 
 
   //if else
-  var variable=3;
+  var variable='M';
   if(variable is int){
     stdout.writeln('Integer Variable');
   }
   else if(variable is double){
     stdout.writeln('Double Variable');
+  }
+  else if(variable is String){
+    stdout.writeln('String Variable');
   }
   else{
     stdout.writeln('Other Type Variable');

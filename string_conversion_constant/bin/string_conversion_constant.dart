@@ -21,14 +21,14 @@ void main(){
   //string fnc
   var v='Mithun';
   print(v.indexOf('i'));
-  print(v.replaceRange(0, 0, 'Mahadi '));
+  print(v.replaceRange(0, 1, 'Mahadi '));
   print(v.contains("un"));
-  print(v.compareTo('Mithun'));
-  print(v.indexOf('n'));
+  print(v.compareTo('Mithun1'));
   print(v.split('th'));
   print(v.substring(2,4));
   print(v.trim());
   print(v.toUpperCase());
+  print(v.toLowerCase());
 
 
   //conversion

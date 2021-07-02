@@ -2,27 +2,28 @@ import 'dart:collection';
 import 'dart:core';
 import 'dart:io';
 
+
 void main(){
 
   //list function
   List <String>? str;
   str=['aa','bb', 'cc', 'dd', 'ee'];
 
+  print(str.length);
   print(str.getRange(0, 2));
   print(str.contains('ac'));
   print(str.reversed);
-  print(str.elementAt(0));
   print(str.indexOf('cc'));
-  print(str.take(3));
   print(str.isEmpty);
 
   //str.insert(0, 'xx');
-  //str.shuffle();
   //str.removeRange(1, 3);
-  // str.removeLast();
   //str.remove('ee');
   //str.removeAt(3);
   //str.clear();
+
+  str.shuffle();
+  print(str);
 
   for(var a in str){
     stdout.write(a+' ');
@@ -33,7 +34,7 @@ void main(){
   //object
   var obj1=['str', 11, 3.1];
   List <Object>? obj2=['str', true, 7];
-
+  print(obj2[0].toString()+'\t'+obj2[1].toString());
   for( Object o in obj1){
     stdout.write('$o ');
   }
@@ -44,8 +45,8 @@ void main(){
   print('\t|object (list<ob>)');
 
   //string
-  List <String>? str;
-  str=['aa','bb', 'cc'];
+  List <String>? str1;
+  str1=['aa','bb', 'cc'];
   for(var i=0;i<str.length;i++){
     stdout.write(str[i]+' ');
   }
@@ -58,19 +59,35 @@ void main(){
   }
   print('\t|integer');
 
-  //set (can't contain duplicate value)
-  Set <String>? se={'ap', 'bal', 'ap', 'ca'};
+
+  //Set
+  var se1=new Set();
+  Set <String>? se={'ap', 'bal', 'ca'};
+
+  se.add('do');
+  print(se.contains('apa'));
+  se.remove('do');
+  print(se.elementAt(0));
+
   for(String? t in se){
     stdout.write('$t ');
   }
   print('\t|Set');
 
+
   // Map
-  Map <String, String>? mp= {
+  var mp1=new Map();
+  Map <String, String>? mp;
+  mp= {
     'a':'apple',
     'b':'ball',
     'c':'cat'
   };
+
+  mp['d']='doll';
+  mp.containsKey('d');
+  mp.remove('d');
+
   stdout.write(mp['c'].toString() +' '+mp['a'].toString() );
   print('\t|Map');
 

@@ -16,7 +16,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="last_opened_file_path" value="$USER_HOME$/sdk-file/dartsdk-linux-x64-release/dart-sdk" />
+    <property name="settings.editor.selected.configurable" value="dart.settings" />
   </component>
   <component name="RunManager">
     <configuration name="function_class_object_constructor_extends.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -35,5 +36,9 @@
       <updated>1622378800586</updated>
     </task>
     <servers />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

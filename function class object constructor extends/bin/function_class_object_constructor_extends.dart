@@ -16,9 +16,6 @@ class A extends B{
     print(s1.toString()+' '+s2.toString());
   }
 
-  @override
-  var x=5,y=1;
-
   void sub (){
     var s=x-y;
     print('sub result $s');
@@ -26,7 +23,7 @@ class A extends B{
 }
 
 void main(){
-  A? o=A("Mithun", 21);
+  A? o=new A("Mithun", 94);
 
   //property of class -A
   o.x=6;
