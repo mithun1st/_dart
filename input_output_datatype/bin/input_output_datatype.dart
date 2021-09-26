@@ -22,7 +22,7 @@ void main(){
 
 
   //variable
-  ///var, int, double, String, bool, dynamic
+  ///var, int, double, String, bool, dynamic, function
 
   int? number1=101;
   var number2=102;
@@ -40,6 +40,7 @@ void main(){
   var con2=false;
   print('$con1 $con2');
 
+
   dynamic dy1;
 
   dy1=94;
@@ -52,4 +53,10 @@ void main(){
   print('$dy1 > '+dy1.runtimeType.toString());
   dy1=null;
   print('$dy1 > '+dy1.runtimeType.toString());
+
+
+  Function f=(String? name){
+    return 'Your name is $name';
+  };
+  print(f('Mithun')+' > ' + f.runtimeType.toString());
 }
